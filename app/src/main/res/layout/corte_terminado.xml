@@ -1,0 +1,260 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+    </RelativeLayout>
+
+    <!-- Main Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTime"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Corte terminado"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="#2C2C2C" />
+
+
+        <CheckBox
+            android:id="@+id/checkCorte"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="onCheckboxClicked"
+            android:text="Corte"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBarba"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="8dp"
+            android:onClick="onCheckboxClicked"
+            android:text="Barba"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <CheckBox
+            android:id="@+id/checkCeja"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="onCheckboxClicked"
+            android:text="Ceja"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Corte"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/labelcobrocorte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Barba"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/labelcobrobarba"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ceja"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/labelcobroceja"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Total"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/labelcobrototal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Pago"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/edittextpago"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Cambio"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/labelcobrocambio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:layout_weight=".5"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                ></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/botonPopupFinalizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#2C2C2C"
+                android:minHeight="50dp"
+                android:text="Finalizar"
+                android:textColor="@android:color/white"
+                android:textSize="16sp">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

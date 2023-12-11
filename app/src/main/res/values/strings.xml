@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BarbarManagement1</string>
+    <string name="stop">Stop Timer</string>
+    <string name="start">Start Timer</string>
+    <string name="working">Started</string>
+    <string name="stopped">Stopped</string>
+    <string name="terminar_corte">Terminar Corte</string>
+    <string name="empezar_corte">Emepzar Corte</string>
+    <string name="barber">\u0040 barber</string>
+
+</resources>

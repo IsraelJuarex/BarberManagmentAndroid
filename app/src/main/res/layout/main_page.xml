@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#2C2C2C"
+            android:orientation="vertical">
+
+            <TextView
+                android:drawableLeft="@drawable/persona"
+                android:drawableRight="@drawable/persona"
+                android:id="@+id/barberName"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="nombre"
+                android:textSize="30dp"
+                android:textColor="@color/white"></TextView>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/BarberTimelayout"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginTop="70dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Hoy"
+                    android:textSize="25dp"></TextView>
+
+                <TextView
+                    android:id="@+id/clock_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FECHA"
+                    android:layout_gravity="center"
+                    android:textSize="20dp"></TextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/BarberTimelayout"
+            android:id="@+id/barberInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingTop="10dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="Cortes:"
+                        android:textSize="25sp"
+                        android:gravity="left"></TextView>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:id="@+id/cortesBarber"
+                        android:layout_width="97dp"
+                        android:layout_height="32dp"
+                        android:text="100,000"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="0.5">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="Barbas:"
+                        android:textSize="25sp"
+                        android:gravity="left"></TextView>
+
+                    <TextView
+                        android:textSize="20sp"
+
+                        android:id="@+id/barbasBarber"
+                        android:layout_width="97dp"
+                        android:layout_height="32dp"
+                        android:text="100,000"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="0.5">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="Cejas:"
+                        android:textSize="25sp"
+                        android:gravity="left"></TextView>
+
+                    <TextView
+                        android:id="@+id/cejasBarber"
+                        android:textSize="20sp"
+
+                        android:layout_width="97dp"
+                        android:layout_height="32dp"
+                        android:text="100,000"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="0.5">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:text="Total:"
+                        android:textSize="25sp"
+                        android:gravity="left"></TextView>
+
+                    <TextView
+                        android:textSize="20sp"
+
+                        android:id="@+id/totalBarber"
+                        android:layout_width="97dp"
+                        android:layout_height="30dp"
+                        android:text="100,000"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/layoutTime"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/barberInfoLayout"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#2C2C2C"
+                android:minHeight="50dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="Iniciar Corte" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="00.00:00"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#2C2C2C"
+                android:minHeight="50dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="Terminar Corte"
+                android:visibility="invisible"
+
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/layoutTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Existing layout code -->
+
+            <!-- Add a logout button -->
+            <Button
+                android:id="@+id/cerrarSesionBoton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#2C2C2C"
+                android:minHeight="50dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="Cerrar Sesion"
+                android:onClick="onLogoutButtonClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <!-- Existing layout code -->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
