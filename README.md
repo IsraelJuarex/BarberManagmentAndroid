@@ -4,5 +4,5 @@ Manage your babershop by checking what your employees are doing, Active or inact
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](Images/|.png)
 
