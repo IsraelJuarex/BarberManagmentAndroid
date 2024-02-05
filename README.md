@@ -5,6 +5,8 @@ Manage your babershop by checking what your employees are doing, Active or inact
 ## Screenshots
 
 ![App Screenshot](Images/A.png)
+
+# Admin (Owner of barbershop)
 ![App Screenshot](Images/B.png)
 ![App Screenshot](Images/C.png)
 ![App Screenshot](Images/D.png)
