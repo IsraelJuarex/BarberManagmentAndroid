@@ -1,6 +1,8 @@
 #  BarberManagementAndroid
 
-Manage your babershop by checking what your employees are doing, Active or inactive you will be able to remotly manage your buisness.
+Manage your babershop by checking what your employees are doing, Active or inactive you will be able to remotly manage your buisness. 
+
+
 
 ## Screenshots
 
@@ -14,3 +16,7 @@ Manage your babershop by checking what your employees are doing, Active or inact
 ### Admin (Owner of barbershop)
 ![App Screenshot](Images/B.png)
 
+### Database && FileHosting
+
+![App Screenshot](Images/F.png)
+![App Screenshot](Images/G.png)
