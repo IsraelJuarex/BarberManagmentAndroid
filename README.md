@@ -2,7 +2,10 @@
 
 Manage your babershop by checking what your employees are doing, Active or inactive you will be able to remotly manage your buisness. 
 
-
+Database used > https://freedb.tech <br />
+Programming Language > Kotlin <br />
+IDE > Android Studio <br />
+SQL IDE > mySQLWorkbench <br />
 
 ## Screenshots
 
