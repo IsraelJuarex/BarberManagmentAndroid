@@ -6,6 +6,7 @@ Database used > https://freedb.tech <br />
 Programming Language > Kotlin <br />
 IDE > Android Studio <br />
 SQL IDE > mySQLWorkbench <br />
+Webhosting > https://mex.000webhost.com <br />
 
 ## Screenshots
 
